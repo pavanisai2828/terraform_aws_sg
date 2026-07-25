@@ -1,4 +1,4 @@
-resource "aws_secutrity_group" "security_groups" {
+resource "aws_security_group" "security_groups" {
     name= local.common_name
     description= "Allow traffic for ${var.sg_name} project ${var.Project} in ${var.Environment}"
     vpc_id= var.vpc_id
