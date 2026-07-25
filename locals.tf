@@ -1,4 +1,5 @@
 locals {
+  common_name="${var.Project}-${var.Environment}-${var.sg_name}" #roboshop-dev-mongodb
   common_tags={
     type=map(any)
         Project= var.Project
@@ -6,6 +7,6 @@ locals {
          Terraform= true
          Name= local.common_name
   }
-  common_name="${var.Project}-${var.Environment}-${var.sg_name}" #roboshop-dev-mongodb
+  
   
 }
