@@ -1,8 +1,8 @@
 locals {
   common_tags={
     type=map(any)
-        "Project"= var.Project
-        "Environment"=var.Environment
+        Project= var.Project
+        Environment=var.Environment
          Terraform= true
          Name= local.common_name
   }
