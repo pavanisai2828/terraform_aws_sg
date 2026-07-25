@@ -9,6 +9,6 @@ locals {
 
     }
   }
-  common_name="${local.common_tags.project}-${local.common_tags.environment}" #roboshop-dev
+  common_name="${local.common_tags.project}-${local.common_tags.environment}-${var.sg_name}" #roboshop-dev-mongodb
   
 }
