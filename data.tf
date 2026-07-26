@@ -27,8 +27,8 @@ data "aws_ssm_parameter" "shipping_sg_id" {
 data "aws_ssm_parameter" "payment_sg_id" {
     name=  "/${var.Project}/${var.Environment}/mongodb_sg_id"
 }
-data "aws_ssm_parameter" "backendalb_sg_id" {
-    name=  "/${var.Project}/${var.Environment}/backendalb_sg_id"
+data "aws_ssm_parameter" "backend_alb_sg_id" {
+    name=  "/${var.Project}/${var.Environment}/backend_alb_sg_id"
 }
 
 data "aws_ssm_parameter" "frontend_sg_id" {
